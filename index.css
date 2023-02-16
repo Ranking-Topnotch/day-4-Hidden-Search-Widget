@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(58, 58, 236);
+}
+.con{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con input{
+    padding: 0.57rem;
+    border: none;
+    transition: width 0.3s ease;
+}
+.con input:focus{
+    border: none;
+    outline: none; 
+} 
+.con span{
+    background-color: white;
+    padding: 0.56rem;
+    border: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .con input{
+        padding: 0.6rem;
+        border: none;
+    }
+    .con span{
+        padding: 0.54rem;
+    } 
+}
